@@ -1,0 +1,24 @@
+{
+  "name": "estructura-proyectos",
+  "version": "1.0.0",
+  "description": "Generador de estructuras de proyectos con Monaco y estilo VS Code",
+  "main": "src/main.js",
+  "scripts": {
+  "start": "electron-forge start",
+  "package": "electron-forge package",
+  "make": "electron-forge make",
+  "publish": "electron-forge publish"
+},
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-forge": "^6.0.0",
+    "@electron-forge/cli": "^6.0.0",
+    "@electron-forge/maker-squirrel": "^6.0.0",
+    "@electron-forge/maker-zip": "^6.0.0",
+    "@electron-forge/maker-deb": "^6.0.0",
+    "@electron-forge/maker-rpm": "^6.0.0"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.45.0"
+  }
+}

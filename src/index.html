@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estructura de Proyectos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="vscode-theme">
+
+  <div class="sidebar">
+    <h3>Formato</h3>
+    <button id="btn-json">JSON</button>
+    <button id="btn-md">Markdown</button>
+    <button id="btn-preview">Vista previa</button>
+    <button id="btn-generate" class="primary">Generar estructura</button>
+  </div>
+
+  <div class="main">
+    <div id="editor" class="editor"></div>
+    <div class="preview-container">
+      <pre id="preview"></pre>
+    </div>
+  </div>
+<script>
+window.require = require;
+</script>
+  <script src="renderer.js"></script>
+</body>
+</html>
