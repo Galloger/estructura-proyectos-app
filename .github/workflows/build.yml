@@ -1,0 +1,38 @@
+name: Build Electron App
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run basic validation
+        run: |
+          echo "Validando sintaxis..."
+          node -c src/main.js
+          node -c src/renderer.js
+
+      - name: Build Electron Forge
+        run: npm run make
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: electron-build
+          path: out/
