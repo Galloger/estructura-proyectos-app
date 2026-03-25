@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Instructivo</title>
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: #f5f5f5;
+    }
+
+    h1, h2, h3 {
+      color: #007acc;
+      margin: 10px 0 5px 0;
+    }
+
+    p {
+      margin: 4px 0;
+      font-size: 16px;
+    
+    }
+
+    ul {
+        margin: 5px 0 5px 10px;
+    }
+
+    .negrita {
+      font-weight: bold;
+    }
+
+    .nota {
+      background: #fff3cd;
+      padding: 5px;
+      border-left: 4px solid #ffcc00;
+      margin: 15px 0;
+    }
+
+    .contenedor {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      min-height: 100%;
+      box-sizing: border-box;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Instructivo de la Aplicación</h2>
+    <p>Esta herramienta permite crear estructuras completas de carpetas y archivos a partir 
+     de un esquema escrito con indentación.
+     Ideal para iniciar proyectos rápidamente sin crear carpetas manualmente.</p>
+
+     <h3>📌 Pasos a seguir</h3>
+     <ul>
+        <li>En el editor, escribe la estructura deseada usando indentación de 2 espacios por nivel.</li>
+        <li>Presiona Vista previa, si estas de acuerdo</li>  
+        <li>Presiona **Generar estructura**.</li>
+        <li>Selecciona la carpeta donde quieres que se cree el proyecto.</li>
+        <li>La herramienta generará automáticamente todas las carpetas y archivos.</li>
+     </ul>
+
+     <h3>📌 Reglas de indentación</h3>
+     <ul>
+     <li>0 espacios → carpeta raíz</li> 
+     <li>2 espacios → subcarpeta nivel 1</li>  
+     <li>4 espacios** → subcarpeta nivel 2</li>  
+     <li>6 espacios** → subcarpeta nivel 3</li>  
+     <li>Los archivos siguen la misma regla.</li>
+     </ul>
+
+     <p>📌<span class="negrita">herramienta soporta **tabs**, pero se recomienda usar **2 espacios por nivel**</span>.</p>
+
+     <h3>📂 Ejemplo de estructura generada</h3>
+
+     <p>📌 Entrada:
+     MiProyecto styles style.css index.html</p>
+
+     <p>📌 Salida:
+     MiProyecto/ ├── styles/ │   └── style.css └── index.html</p>
+     </div>
+</h2>
+</body>
+</html>
